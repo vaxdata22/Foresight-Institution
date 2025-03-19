@@ -323,7 +323,7 @@ From the visualization of the number of study centers per state, it is clearly s
 13)	 From the visualization of course registration, it shows that the second semester has the highest number of course registration and the first-semester registration is low. Also in the visualization of the student amount per semester, the second semester is leading with a big margin in terms of revenue, and this could be a result of the high number of student registration during the second semester.
 
 
-![semester course registration](../charts/charts/semester-course-registration.png)
+![semester course registration](../charts/charts/semester-course-registrations.png)
 
 
 
