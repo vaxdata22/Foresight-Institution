@@ -1,4 +1,4 @@
-# Foresight-Institution
+# Foresight Institution
 
 This is a Data Analysis case study done on the Foresight Institution dataset.
 
