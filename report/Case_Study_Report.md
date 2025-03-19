@@ -234,9 +234,9 @@ The following are important insights revealed by my analysis of the dataset:
 1)	From the visualization of applicant amount per specialization it was observed that, PGDE is the specialization having the highest amount N 95,538,240.  See also the visualization of applicant per specialization where PGDE has the highest number of applicants. It was also observed that primary education/social studies and social studies are having almost the same amount despite the fact that primary education/social studies have higher number of applicants than social studies.
 
 
-![aplicant amount per specialization](../charts/charts/aplicant-amount-per-specialization.png)
+![aplicant amount per specialization](../charts/charts/applicant-amount-per-specialization.png)
 
-![aplicant per specialization](../charts/charts/aplicant-per-specialization.png)
+![aplicant per specialization](../charts/charts/applicants-per-specialization.png)
 
 
 
@@ -251,28 +251,28 @@ The following are important insights revealed by my analysis of the dataset:
 3)	From the visualization of applicant fees per program, PGDE also generated the highest fees by the applicants. Also in the visualization of the number of applicants per program, NCE has the highest number of applicants but PGDE is generating more revenue than the NCE.  Again in the number of programs per specialization, it is observed that NCE has the highest number of specializations (45). Despite the fact that PGDE has only 1 specialization, it is still the specialization generating more revenue.
 
 
-![aplicant fee per programme](../charts/charts/aplicant-fee-per-programme.png)
+![aplicant fee per programme](../charts/charts/applicant-fee-per-programme.png)
 
 
-![number of aplicant per programme](../charts/charts/no-of-aplicant-per-programme.png)
+![number of aplicant per programme](../charts/charts/no-of-applicants-per-programme.png)
 
 
 4)	From the visualization of applicants per study admission type, it shows clearly that the institution favors freshers more than direct entry due to the increasing number of applicants as the number of applicants for fresher is 6156, while for direct entry it is 675. See also the number of applicants per entry type.
 
 
-![aplicant per admission type](../charts/charts/aplicant-per-admission-type.png)
+![aplicant per admission type](../charts/charts/applicants-per-admission-type.png)
 
 
-![number of aplicant per entry type](../charts/charts/no-of-aplicant-per-entry-type.png)
+![number of aplicant per entry type](../charts/charts/no-of-applicants-per-entry-type.png)
 
 
 5)	From the visualization of the applicant per study center, it is observed that the University of Go was generating more revenue than other study centers. In the visualization of the number of applicants per study center, it is observed that the Vocational Center, Go has the highest number of applicants per study center but the University of Go is the study center with the fourth highest number of applicants per study center.
 
 
-![aplicant per study center](../charts/charts/aplicant-per-study-center.png)
+![aplicant per study center](../charts/charts/applicants-per-study-center.png)
 
 
-![number of aplicant per study center](../charts/charts/no-of-aplicant-per-study-center.png)
+![number of aplicant per study center](../charts/charts/no-of-applicants-per-study-center.png)
 
 
 6)	From the visualization of the number of students per payment status, it is clearly observed that the number of students who did not pay is higher than those students who made payments. This might be something to look into as it is not proper to have a situation like this.
@@ -309,14 +309,14 @@ The following are important insights revealed by my analysis of the dataset:
 11)	Looking at the visualization of the number of study centers, it was observed that the Vocational Center, Go has the highest number of study centers in the school, this information is valid because it agrees with our early visualization of the number of applicants per study center, where Vocational Center, Go has the highest number of applicants per study center.
 
 
-![number of study centers in the school](../charts/charts/no-of-study-center-in-the-school.png)
+![number of study centers in the school](../charts/charts/no-of-study-centers-in-the-school.png)
 
 
 
 From the visualization of the number of study centers per state, it is clearly seen that Lagos, Kaduna, and Oyo state has the highest number of study centers.
 
 
-![number of study center per state](../charts/charts/no-of-study-center-per-state.png)
+![number of study center per state](../charts/charts/no-of-study-centers-per-state.png)
 
 
 
@@ -353,7 +353,7 @@ From the visualization of the number of study centers per state, it is clearly s
 17)	Observing the visualization of the total applicant per payment status, it was clearly observed that the unpaid amount by applicants were higher than the paid amount, and this clearly agrees with our earlier visualization of the number of students per payment status that a lot of students were not paying. It is also observed that both students and applicants were performing poorly in terms of payment.
 
 
-![total aplicant per payment status](../charts/charts/total-aplicant-per-payment-status.png)
+![total aplicant per payment status](../charts/charts/total-applicants-per-payment-status.png)
 
 
 18)	From the visualization of registration type, it is observed that students with regular registration are higher than those with carry-over.
