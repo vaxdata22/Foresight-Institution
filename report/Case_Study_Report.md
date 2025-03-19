@@ -66,10 +66,10 @@ The table below summarizes the description of the dataset in the 14 tables:
 |Admissions|entry_year|Admission Year|
 |Admissions|entry_type|Indicates if applicant is coming in as a Fresher or Direct Entry to an advanced level|
 |Admissions|Program Duration|Length of the programme|
-|Admissions|Admission Status|Indicates the virdict of the admission|
+|Admissions|Admission Status|Indicates the status of the admission|
 |Admissions|Remarks|Comments especially when admission is not granted|
 |Admissions|ApplicationState|State of the applicant|
-|ApplicationFinancials|ID|Unique ID for each aplication payment record|
+|ApplicationFinancials|ID|Unique ID for each application payment record|
 |ApplicationFinancials|FeesTypeID|ID for the type of payment|
 |ApplicationFinancials|SemesterID|ID for the semester the payment is meant for|
 |ApplicationFinancials|Amount|Amount Paid|
@@ -87,13 +87,13 @@ The table below summarizes the description of the dataset in the 14 tables:
 |Applicants|FirstChoice|1st choice of Specialization applicant is putting in for|
 |Applicants|SecondChoice|2nd choice of specialization applicant is putting in for|
 |Applicants|EntryLevelType|Indicates if applicant is entering as a Fresher or Direct Entry|
-|Applicants|StudyCenterID|ID of syudy center applicant is putting in for|
+|Applicants|StudyCenterID|ID of study center applicant is putting in for|
 |Applicants|ApplicationStateID|ID of applicant's state|
 |Applicants|ApplicationStatus|Status of application|
 |CourseRegistration|ID|Unique Identifier for each course registration record|
 |CourseRegistration|StudentID|ID of Student registering for course|
 |CourseRegistration|SemesterID|ID of the semester the registration is meant for|
-|CourseRegistration|RegistrationType|Indicates if theregistration is regular or a retake/carried over course|
+|CourseRegistration|RegistrationType|Indicates if the registration is regular or a retake/carried over course|
 |CourseRegistration|Day|Day of Registration|
 |CourseRegistration|Month|Month of Registration|
 |CourseRegistration|Year|Year of Registration|
@@ -112,7 +112,7 @@ The table below summarizes the description of the dataset in the 14 tables:
 |StudentsTransactions|status|Status of the payment|
 |StudentsTransactions|PaymentAdviceDate|When Payment Advice was generated|
 |StudentsTransactions|StudentID|ID of student making the payment|
-|StudentsTransactions|StudentProgramID|ID of the program student is paying for|
+|StudentsTransactions|StudentProgramID|ID of the programme student is paying for|
 |StudentsTransactions|StudentSpecializationID|ID of the Study center the student applied to|
 |StudentsTransactions|StudentStudyCenterID|StudyCenterID of the Student|
 |StudentsTransactions|Transaction Status|System captured status of payment|
@@ -122,7 +122,7 @@ The table below summarizes the description of the dataset in the 14 tables:
 
 Data exploration and cleaning was done using Google Sheets. The following information was discovered during the data processing:
 
-1)	They are 234, 864 students in the Foresight institution 
+1)	There are 234, 864 students in the Foresight institution 
 
 2)	Foresight institutions can be found in six zones
 
@@ -142,7 +142,7 @@ Data exploration and cleaning was done using Google Sheets. The following inform
 
 4)	It was also observed that Foresight Institution is present in 37 states.
 Foresight Institution has 488 study centers.
-And Lagos state with the highest number of study centers has 62 study centers. And Edo state has 13 study centers making it the state with the lowest study center 
+Lagos state with the highest number of study centers has 62 study centers. Edo state has 13 study centers making it the state with the lowest study center 
 
 
 5)	In Foresight Institution, only five programs are being offered, they are:
@@ -183,7 +183,7 @@ And Lagos state with the highest number of study centers has 62 study centers. A
 
      l)	2017/2018
 
-7)	There are 56 specializations or departments in foresight Institution.
+7)	There are 56 specializations or departments in Foresight Institution.
 
 8)	The program with the highest specialization is NCE, which has a total of 45 specializations and PGDE & PTTP have just 1 specialization respectively.
 
@@ -231,139 +231,139 @@ And Lagos state with the highest number of study centers has 62 study centers. A
 I ran some queries on the dataset using a Microsoft SQL server to carry out my analysis toward answering the business question. The results of these queries were then visualized graphically using Tableau software.
 The following are important insights revealed by my analysis of the dataset:
 
-1)	From the visualization of applicant amount per specialization it was observed that, PGDE is the specialization having the highest amount N95,538,240.  See also the visualization of applicant per specialization where PGDE has the highest number of applicants. It was also observed that primary education/social studies and social studies are having almost the same amount despite the fact that primary education/social studies have higher number of applicants than social studies.
+1)	From the visualization of applicant amount per specialization it was observed that, PGDE is the specialization having the highest amount N 95,538,240.  See also the visualization of applicant per specialization where PGDE has the highest number of applicants. It was also observed that primary education/social studies and social studies are having almost the same amount despite the fact that primary education/social studies have higher number of applicants than social studies.
 
 
-![aplicant amount per specialization](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/aplicant%20amount%20per%20specialization.png)
+![aplicant amount per specialization](../charts/charts/aplicant-amount-per-specialization.png)
 
-![aplicant per specialization](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/aplicant%20per%20specialization.png)
-
-
-
-2)	From the visualization of the total amount per student transaction, the approved student transactions totaled N762, 683,040, and only a total amount of N917, 280 was rejected. The pending transactions was also on the high side, totaling a sum of N28,658,560.  See also the visualization of amount per student payment status. It is observed that the number of students that made payments was very high, thereby creating room for a lot of transactions to be approved. So it will be proper if we classify those students that have not paid to be among those whose amount per transaction is having a transaction that is pending.
-
-![amount per student transaction](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/amount%20per%20student%20transaction.png)
+![aplicant per specialization](../charts/charts/aplicant-per-specialization.png)
 
 
-![amount per student payment ststus](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/amount%20per%20student%20payment%20status.png)
+
+2)	From the visualization of the total amount per student transaction, the approved student transactions totaled N 762, 683,040, and only a total amount of N 917, 280 was rejected. The pending transactions was also on the high side, totaling a sum of N28,658,560.  See also the visualization of amount per student payment status. It is observed that the number of students that made payments was very high, thereby creating room for a lot of transactions to be approved. So it will be proper if we classify those students that have not paid to be among those whose amount per transaction is having a transaction that is pending.
+
+![amount per student transaction](../charts/charts/amount-per-student-transaction.png)
+
+
+![amount per student payment ststus](../charts/charts/amount-per-student-payment-status.png)
 
 
 3)	From the visualization of applicant fees per program, PGDE also generated the highest fees by the applicants. Also in the visualization of the number of applicants per program, NCE has the highest number of applicants but PGDE is generating more revenue than the NCE.  Again in the number of programs per specialization, it is observed that NCE has the highest number of specializations (45). Despite the fact that PGDE has only 1 specialization, it is still the specialization generating more revenue.
 
 
-![aplicant fee per programme](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/aplicant%20fee%20per%20programme.png)
+![aplicant fee per programme](../charts/charts/aplicant-fee-per-programme.png)
 
 
-![number of aplicant per programme](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20aplicant%20per%20programme.png)
+![number of aplicant per programme](../charts/charts/no-of-aplicant-per-programme.png)
 
 
 4)	From the visualization of applicants per study admission type, it shows clearly that the institution favors freshers more than direct entry due to the increasing number of applicants as the number of applicants for fresher is 6156, while for direct entry it is 675. See also the number of applicants per entry type.
 
 
-![aplicant per admission type](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/aplicant%20per%20admission%20type.png)
+![aplicant per admission type](../charts/charts/aplicant-per-admission-type.png)
 
 
-![number of aplicant per entry type](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20aplicant%20per%20entry%20type.png)
+![number of aplicant per entry type](../charts/charts/no-of-aplicant-per-entry-type.png)
 
 
 5)	From the visualization of the applicant per study center, it is observed that the University of Go was generating more revenue than other study centers. In the visualization of the number of applicants per study center, it is observed that the Vocational Center, Go has the highest number of applicants per study center but the University of Go is the study center with the fourth highest number of applicants per study center.
 
 
-![aplicant per study center](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/aplicant%20per%20study%20center.png)
+![aplicant per study center](../charts/charts/aplicant-per-study-center.png)
 
 
-![number of aplicant per study center](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20aplicant%20per%20study%20center.png)
+![number of aplicant per study center](../charts/charts/no-of-aplicant-per-study-center.png)
 
 
 6)	From the visualization of the number of students per payment status, it is clearly observed that the number of students who did not pay is higher than those students who made payments. This might be something to look into as it is not proper to have a situation like this.
 
 
-![number of students per payment status](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20students%20per%20payment%20status.png)
+![number of students per payment status](../charts/charts/no-of-students-per-payment-status.png)
 
 
 7)	From the visualization of the number of students per specialization, primary education/social studies have the highest number of students that applied to a particular specialization and then the second specialization with the highest number of students is PGDE. Note also that primary education/social studies also have the highest number of applicants.
 
 
-![number of students per specialization](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20students%20per%20specialization.png)
+![number of students per specialization](../charts/charts/no-of-students-per-specialization.png)
 
 
 8)	During the visualization of the number of students per program, it is clearly shown that NCE has the highest number of students per program as well as the highest number of applicants per program. PGDE is the program with the second-highest number of students. Although, our earlier visualization has shown that PGDE is the program generating the highest revenue.
 
 
-![number of students per programme](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20students%20per%20programme.png)
+![number of students per programme](../charts/charts/no-of-students-per-programme.png)
 
 
 9)	Observing the visualization of the number of students per study center, it is clearly seen that the University of Go has the highest number of students per study center. It has been shown from our earlier visualization that the University of Go is making more revenue than every other study center. Although they are not the study center with the highest number of applicants. 
 
 
-![number of students per study center](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20students%20per%20study%20center.png)
+![number of students per study center](../charts/charts/no-of-students-per-study-center.png)
 
 
 10)	Examining the visualization of the number of students per transaction status, it is clearly seen that the number of approved student transaction status is higher. But it was also seen in our previous visualization of the number of students per payment status that those who didn’t pay their fees were very high as compared to those who paid.
 
 
-![number of students per transaction status](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20students%20per%20transaction%20status.png)
+![number of students per transaction status](../charts/charts/no-of-students-per-transaction-status.png)
 
 
 
 11)	Looking at the visualization of the number of study centers, it was observed that the Vocational Center, Go has the highest number of study centers in the school, this information is valid because it agrees with our early visualization of the number of applicants per study center, where Vocational Center, Go has the highest number of applicants per study center.
 
 
-![number of study centers in the school](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20study%20center%20in%20the%20school.png)
+![number of study centers in the school](../charts/charts/no-of-study-center-in-the-school.png)
 
 
 
 From the visualization of the number of study centers per state, it is clearly seen that Lagos, Kaduna, and Oyo state has the highest number of study centers.
 
 
-![number of study center per state](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20study%20center%20per%20state.png)
+![number of study center per state](../charts/charts/no-of-study-center-per-state.png)
 
 
 
 13)	 From the visualization of course registration, it shows that the second semester has the highest number of course registration and the first-semester registration is low. Also in the visualization of the student amount per semester, the second semester is leading with a big margin in terms of revenue, and this could be a result of the high number of student registration during the second semester.
 
 
-![semester course registration](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/semester%20course%20registration.png)
+![semester course registration](../charts/charts/semester-course-registration.png)
 
 
 
-![student amount per semester](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/student%20amount%20per%20semester.png)
+![student amount per semester](../charts/charts/student-amount-per-semester.png)
 
 
 
 14)	 From the visualization of the students per program, it is observed that NCE is generating more revenue as compared to other programs. This visualization clearly agrees with our earlier visualization that shows that NCE has the highest number of applicants as well as the highest number of students.
 
 
-![students per programme](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20students%20per%20programme.png)
+![students per programme](../charts/charts/no-of-students-per-programme.png)
 
 
 15)	From the visualization of students per specialization, PGDE leads in terms of revenue generation. This clearly agrees with our visualization of the applicant’s amount per specialization which shows that PGDE applicants generate more revenue. This could also be a result of them having the highest number of applicants.
 
 
-![students per specialization](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/no%20of%20students%20per%20specialization.png)
+![students per specialization](../charts/charts/no-of-students-per-specialization.png)
 
 
 
 16)	From the visualization of students per study center, it is rightly observed that the University of Go, is generating more revenue than other study centers. This could be a result of the University of Go, having more students than other study centers. This clearly agrees with our earlier visualization of applicants per study center which also shows that the University of Go also makes more revenue than other study centers.
 
 
-![student per study center](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/students%20per%20%20study%20center.png)
+![student per study center](../charts/charts/students-per-study-center.png)
 
 
 17)	Observing the visualization of the total applicant per payment status, it was clearly observed that the unpaid amount by applicants were higher than the paid amount, and this clearly agrees with our earlier visualization of the number of students per payment status that a lot of students were not paying. It is also observed that both students and applicants were performing poorly in terms of payment.
 
 
-![total aplicant per payment status](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/total%20aplicant%20per%20payment%20status.png)
+![total aplicant per payment status](../charts/charts/total-aplicant-per-payment-status.png)
 
 
 18)	From the visualization of registration type, it is observed that students with regular registration are higher than those with carry-over.
 
-![total registration type](https://github.com/vaxdata22/Foresight-Institution/blob/main/charts/total%20registration%20type.png)
+![total registration type](../charts/charts/total-registration-type.png)
 
 
 
 
-For details of the SQL queries, [click here.](https://github.com/vaxdata22/Foresight-Institution/blob/main/analysis.sql) to see the "analysis.sql" file.
+For details of the SQL queries, [click here.](code/analysis.sql) to see the "analysis.sql" file.
  
  
 
@@ -377,7 +377,7 @@ The following are my best business recommendations based on the insights reveale
 
 3)	It is the best decision in the interest of Foresight to continue to offer more admission to Fresher than Direct entry. This is because Fresher always produces a higher number of applicants going by our visualization. The higher the number of applicants, the more revenue fresher will generate for the institution.
 
-4)	The institution needs to upgrade the poor-performing specializations like Pttp, primary education/business studies, social studies/chrostianity studies,social studies(double major) and mathematics in terms of offering quality educational services. This will attract aspiring candidates or old students to the newly improved specializations.
+4)	The institution needs to upgrade the poor-performing specializations like Pttp, primary education/business studies, social studies/christianity studies,social studies(double major) and mathematics in terms of offering quality educational services. This will attract aspiring candidates or old students to the newly improved specializations.
 
 5)	The institution should create more study centers in states like Edo, Imo, and cross-river  for both students and applicants in other to provide a conducive atmosphere for learning. This will also enhance students’ performance because when study centers are decongested, it will provide a better atmosphere for study. 
 
